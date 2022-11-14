@@ -8,12 +8,12 @@ package Vista;
  *
  * @author juald
  */
-public class VistaMonitor extends javax.swing.JPanel {
+public class VistaSocio extends javax.swing.JPanel {
 
     /**
-     * Creates new form VistaMonitor
+     * Creates new form VistaSocio
      */
-    public VistaMonitor() {
+    public VistaSocio() {
         initComponents();
     }
 
@@ -26,14 +26,20 @@ public class VistaMonitor extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jScrollPane1 = new javax.swing.JScrollPane();
-        TablaMonitor = new javax.swing.JTable();
-        jButtonAddMonitor = new javax.swing.JButton();
-        jButtonDeleteMonitor = new javax.swing.JButton();
-        jButtonUpdateMonitor = new javax.swing.JButton();
+        jButtonUpdateSocio = new javax.swing.JButton();
         jLabelGestionDeMonitores = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        TablaSocio = new javax.swing.JTable();
+        jButtonAddSocio = new javax.swing.JButton();
+        jButtonDeleteSocio = new javax.swing.JButton();
 
-        TablaMonitor.setModel(new javax.swing.table.DefaultTableModel(
+        jButtonUpdateSocio.setText("Actualización de Socio");
+        jButtonUpdateSocio.setActionCommand("ActualizacionSocio");
+
+        jLabelGestionDeMonitores.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabelGestionDeMonitores.setText("Gestión de Socios");
+
+        TablaSocio.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -44,19 +50,13 @@ public class VistaMonitor extends javax.swing.JPanel {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        jScrollPane1.setViewportView(TablaMonitor);
+        jScrollPane1.setViewportView(TablaSocio);
 
-        jButtonAddMonitor.setText("Nuevo Monitor");
-        jButtonAddMonitor.setActionCommand("NuevoMonitor");
+        jButtonAddSocio.setText("Nuevo Socio");
+        jButtonAddSocio.setActionCommand("NuevoSocio");
 
-        jButtonDeleteMonitor.setText("Baja de Monitor");
-        jButtonDeleteMonitor.setActionCommand("BajaMonitor");
-
-        jButtonUpdateMonitor.setText("Actualización de Monitor");
-        jButtonUpdateMonitor.setActionCommand("ActualizacionMonitor");
-
-        jLabelGestionDeMonitores.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabelGestionDeMonitores.setText("Gestión de Monitores");
+        jButtonDeleteSocio.setText("Baja de Socio");
+        jButtonDeleteSocio.setActionCommand("BajaSocio");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -68,12 +68,12 @@ public class VistaMonitor extends javax.swing.JPanel {
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 674, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelGestionDeMonitores, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButtonAddMonitor)
+                        .addComponent(jButtonAddSocio)
                         .addGap(18, 18, 18)
-                        .addComponent(jButtonDeleteMonitor)
+                        .addComponent(jButtonDeleteSocio)
                         .addGap(18, 18, 18)
-                        .addComponent(jButtonUpdateMonitor)))
-                .addContainerGap(22, Short.MAX_VALUE))
+                        .addComponent(jButtonUpdateSocio)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -84,19 +84,19 @@ public class VistaMonitor extends javax.swing.JPanel {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButtonAddMonitor)
-                    .addComponent(jButtonDeleteMonitor)
-                    .addComponent(jButtonUpdateMonitor))
-                .addContainerGap(39, Short.MAX_VALUE))
+                    .addComponent(jButtonAddSocio)
+                    .addComponent(jButtonDeleteSocio)
+                    .addComponent(jButtonUpdateSocio))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JTable TablaMonitor;
-    public javax.swing.JButton jButtonAddMonitor;
-    public javax.swing.JButton jButtonDeleteMonitor;
-    public javax.swing.JButton jButtonUpdateMonitor;
+    public javax.swing.JTable TablaSocio;
+    public javax.swing.JButton jButtonAddSocio;
+    public javax.swing.JButton jButtonDeleteSocio;
+    public javax.swing.JButton jButtonUpdateSocio;
     public javax.swing.JLabel jLabelGestionDeMonitores;
     public javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables

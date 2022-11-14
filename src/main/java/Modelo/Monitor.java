@@ -12,7 +12,7 @@ public class Monitor {
     private String codMonitor;
     private String nombre;
     private String dni;
-    private int telefono;
+    private String telefono;
     private String correo;
     private String fechaEntrada;
     private String nick;
@@ -21,13 +21,13 @@ public class Monitor {
         this.codMonitor = null;
         this.nombre = null;
         this.dni = null;
-        this.telefono = 0;
+        this.telefono = null;
         this.correo = null;
         this.fechaEntrada = null;
         this.nick = null;
     }
     
-    public Monitor(String codMonitor, String nombre, String dni, int telefono, String correo, String fechaEntrada, String nick) {
+    public Monitor(String codMonitor, String nombre, String dni, String telefono, String correo, String fechaEntrada, String nick) {
         this.codMonitor = codMonitor;
         this.nombre = nombre;
         this.dni = dni;
@@ -50,7 +50,7 @@ public class Monitor {
         return this.dni;
     }
 
-    public int getTelefono() {
+    public String getTelefono() {
         return this.telefono;
     }
 
@@ -79,7 +79,7 @@ public class Monitor {
         this.dni = dni;
     }
 
-    public void setTelefono(int telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 

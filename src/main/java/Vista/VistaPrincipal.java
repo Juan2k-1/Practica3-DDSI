@@ -47,8 +47,10 @@ public class VistaPrincipal extends javax.swing.JFrame {
         BarraMenuPrincipal.add(MenuItemMonitores);
 
         MenuItemSocios.setText("Socios");
+        MenuItemSocios.setActionCommand("Menu");
 
         jMenuItemSocios.setText("Gestion de Socios");
+        jMenuItemSocios.setActionCommand("GestionDeSocios");
         MenuItemSocios.add(jMenuItemSocios);
 
         BarraMenuPrincipal.add(MenuItemSocios);
@@ -71,11 +73,11 @@ public class VistaPrincipal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 714, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 277, Short.MAX_VALUE)
+            .addGap(0, 301, Short.MAX_VALUE)
         );
 
         pack();

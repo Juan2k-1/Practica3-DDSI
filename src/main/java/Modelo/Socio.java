@@ -9,27 +9,27 @@ package Modelo;
  * @author juald
  */
 public class Socio {
-    private int numeroSocio;
+    private String numeroSocio;
     private String nombre;
     private String dni;
     private String fechaNacimiento;
-    private int telefono;
+    private String telefono;
     private String correo;
     private String fechaEntrada;
     private String categoria;
     
     public Socio() {
-        this.numeroSocio = 0;
+        this.numeroSocio = null;
         this.nombre = null;
         this.dni = null;
         this.fechaNacimiento = null;
-        this.telefono = 0;
+        this.telefono = null;
         this.correo = null;
         this.fechaEntrada = null;
         this.categoria = null;
     }
     
-    public Socio(int numeroSocio, String nombre, String dni, String fechaNacimiento, int telefono, String correo, String fechaEntrada, String categoria) {
+    public Socio(String numeroSocio, String nombre, String dni, String fechaNacimiento, String telefono, String correo, String fechaEntrada, String categoria) {
         this.numeroSocio = numeroSocio;
         this.nombre = nombre;
         this.dni = dni;
@@ -41,7 +41,7 @@ public class Socio {
     }
 
     //Getters
-    public int getnumeroSocio() {
+    public String getnumeroSocio() {
         return this.numeroSocio;
     }
     public String getNombre() {
@@ -56,7 +56,7 @@ public class Socio {
         return this.fechaNacimiento;
     }
 
-    public int getTelefono() {
+    public String getTelefono() {
         return this.telefono;
     }
 
@@ -73,7 +73,7 @@ public class Socio {
     }
 
     //Setters
-    public void setnumeroSocio(int numeroSocio) {
+    public void setnumeroSocio(String numeroSocio) {
         this.numeroSocio = numeroSocio;
     }
     public void setNombre(String nombre) {
@@ -88,7 +88,7 @@ public class Socio {
         this.fechaNacimiento = fechaNacimiento;
     }
 
-    public void setTelefono(int telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 
